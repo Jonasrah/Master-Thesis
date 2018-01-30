@@ -1,35 +1,66 @@
-\documentclass{masterthesis}
-
-\title{%
-  \Large Coupling Action and Function in Games: \\
-  \large Towards a Better Understanding of how to Convey \\
-    Meaning Intuitively in Game Design}
-
-\author{Jonas Haugesen}
-\supervisor{Hans-Joachim Backe, Associate Professor}
-
-\university{IT University of Copenhagen}
-\location{Copenhagen, Denmark}
-
-\degree{A thesis submitted in fulfilment of the requirements
-for the degree of Master of Science.}
-
-\date{June 2018}
+\documentclass[a4paper]{report}
+\usepackage{apacite}
+\usepackage{pdfpages}
+\usepackage{titling}
+\bibliographystyle{apacite}
 
 \begin{document}
 
-\maketitle
-\makefrontmatter
+\begin{titlepage}
 
-\include{chapters/Theory}
-\include{chapters/Prototype}
-\include{chapters/Test}
+  \begin{flushright}
+    \includegraphics[width=0.4\textwidth]{figures/ITU_logo}
+  \end{flushright}
 
-\clearpage
-\makebibliography
+  \begin{center}
 
-\begin{appendices}
-\include{appendices/appendix1}
-\end{appendices}
+          \vspace*{1cm}
+
+          \Huge\textbf{Coupling Action and Function in Games:}
+
+          \vspace{0.5cm}
+          \Large Towards a Better Understanding of how to Convey \\
+            Meaning Intuitively in Game Design
+
+          \vspace{1.5cm}
+
+          \large
+          \textbf{Jonas Haugesen} \\
+          \vspace{0.4cm}
+          June 2018
+          \vfill
+
+          Supervisor: Hans-Joachim Backe, Associate Professor\\
+
+          \vspace{0.4cm}
+
+          A thesis submitted in fulfilment of the requirements
+          for the degree of Master of Science.
+
+          \vspace{0.8cm}
+
+          GAMES\\
+          IT-University of Copenhagen\\
+          Denmark\\
+          \vspace{2cm}
+
+      \end{center}
+\end{titlepage}
+
+\chapter*{Abstract}
+\input{frontmatter/abstract}
+
+\chapter{Theory}
+\input{chapters/Theory}
+\chapter{Prototype}
+\input{chapters/Prototype}
+\chapter{Test}
+\input{chapters/Test}
+
+\newpage
+\bibliography{references}
+
+\appendix
+\input{appendices/appendix1}
 
 \end{document}
