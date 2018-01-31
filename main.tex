@@ -1,22 +1,41 @@
-\documentclass[a4paper]{report}
+\documentclass[12pt, twoside]{report}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\graphicspath{ {figures/} }
+\usepackage[a4paper,width=150mm,top=25mm,bottom=25mm,bindingoffset=6mm]{geometry}
 \usepackage{apacite}
 \usepackage{pdfpages}
 \usepackage{titling}
+\usepackage[T1]{fontenc}
+\usepackage{titlesec, blindtext, color}
+\definecolor{gray75}{gray}{0.75}
+\newcommand{\hsp}{\hspace{20pt}}
+\titleformat{\chapter}[hang]{\Huge\bfseries}{\thechapter\hsp\textcolor{gray75}{|}\hsp}{0pt}{\Huge\bfseries}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead{}
+\fancyhead[RO,LE]{Coupling Action and Function in Games}
+\fancyhead[RO,RE]{\thechapter}
+\fancyfoot{}
+\fancyfoot[LE, RO]{\thepage}
+
 \bibliographystyle{apacite}
+
+\title{Coupling Action and Function in Games}
 
 \begin{document}
 
 \begin{titlepage}
 
   \begin{flushright}
-    \includegraphics[width=0.4\textwidth]{figures/ITU_logo}
+    \includegraphics[width=0.4\textwidth]{ITU_logo}
   \end{flushright}
 
   \begin{center}
 
           \vspace*{1cm}
 
-          \Huge\textbf{Coupling Action and Function in Games:}
+          \Huge\textbf{\thetitle:}
 
           \vspace{0.5cm}
           \Large Towards a Better Understanding of how to Convey \\
