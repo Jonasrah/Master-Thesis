@@ -1,10 +1,11 @@
-\documentclass[twoside]{article}
+\documentclass[twoside]{report}
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
 \graphicspath{ {figures/} }
 \usepackage[a4paper,width=150mm,top=25mm,bottom=25mm,bindingoffset=6mm]{geometry}
 \usepackage{apacite}
 \usepackage{pdfpages}
+\usepackage{nameref}
 \usepackage{titling}
 \usepackage[T1]{fontenc}
 \usepackage{titlesec, blindtext, color}
@@ -13,10 +14,16 @@
 \titleformat{\chapter}[hang]{\Huge\bfseries}{\thechapter\hsp\textcolor{gray75}{|}\hsp}{0pt}{\Huge\bfseries}
 \usepackage{fancyhdr}
 \pagestyle{fancy}
-\fancyhead{}
-\fancyhead[RO,LE]{Coupling Action and Function in Games}
-\fancyfoot{}
-\fancyfoot[LE,RO]{\thepage}
+\renewcommand{\chaptermark}[1]{%
+\markboth{\thechapter.\textit{\ #1}}{}}
+\fancyhf{}
+\fancyhead[RE]{\leftmark}
+\fancyhead[LO]{\textit {Coupling Action and Function in Games}}
+\fancyfoot[RE,LO]{\textbf\thepage}
+\fancypagestyle{plain}{%
+  \fancyhead{} % get rid of headers
+  \renewcommand{\headrulewidth}{0pt} % and the line
+}
 
 \bibliographystyle{apacite}
 
@@ -64,8 +71,6 @@
 
       \end{center}
 \end{titlepage}
-
-\chapter*{Abstract}
 
 \input{frontmatter/abstract}
 
