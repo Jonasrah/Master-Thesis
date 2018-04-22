@@ -4,11 +4,12 @@
 \usepackage{graphicx}
 \usepackage{wrapfig}
 \graphicspath{ {figures/} }
-\usepackage[a4paper,width=150mm,top=25mm,bottom=25mm,bindingoffset=6mm]{geometry}
+\usepackage[a4paper,width=140mm,top=25mm,bottom=25mm,bindingoffset=6mm]{geometry}
 \usepackage{apacite}
 \usepackage{pdfpages}
 \usepackage{nameref}
 \usepackage{titling}
+\usepackage{csquotes}
 \usepackage[T1]{fontenc}
 \usepackage{titlesec, blindtext, color}
 \definecolor{gray75}{gray}{0.75}
@@ -26,6 +27,9 @@
   \fancyhead{} % get rid of headers
   \renewcommand{\headrulewidth}{0pt} % and the line
 }
+\setlength{\parindent}{4em}
+\setlength{\parskip}{1em}
+\renewcommand{\baselinestretch}{1.5}
 
 \bibliographystyle{apacite}
 
@@ -80,9 +84,7 @@
 
 \input{chapters/Framework/Theory}
 
-\input{chapters/Prototype}
-
-\input{chapters/Test}
+\input{chapters/Method/Method}
 
 \newpage
 \bibliography{references}
