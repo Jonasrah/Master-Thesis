@@ -1,8 +1,10 @@
-\documentclass[twoside]{report}
+\documentclass[twoside, 12pt]{report}
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
 \usepackage{wrapfig}
+\usepackage{caption}
 \graphicspath{ {figures/} }
+\captionsetup[figure]{labelfont={bf},labelsep=period, font={footnotesize, bf}}
 \usepackage[a4paper,width=140mm,top=25mm,bottom=25mm,bindingoffset=6mm]{geometry}
 \usepackage{apacite}
 \usepackage{pdfpages}
@@ -81,7 +83,9 @@
 
 \input{chapters/Introduction}
 
-\input{chapters/Framework/Theory}
+\input{chapters/Theory/Theory}
+
+\input{chapters/Framework/Head}
 
 \input{chapters/Method/Method}
 
